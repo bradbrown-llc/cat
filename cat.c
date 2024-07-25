@@ -11,5 +11,4 @@ int main(int argc, char **argv) {
     int sent = 0;
     while (sent < buf0.st_size) sent += sendfile(1, f, NULL, buf0.st_size);
     sent += sendfile(1, f, NULL, buf0.st_size);
-    
 }
