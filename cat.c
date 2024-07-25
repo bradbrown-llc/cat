@@ -10,5 +10,4 @@ int main(int argc, char **argv) {
     fstat(f, &buf0);
     int sent = 0;
     while (sent < buf0.st_size) sent += sendfile(1, f, NULL, buf0.st_size);
-    sent += sendfile(1, f, NULL, buf0.st_size);
 }
